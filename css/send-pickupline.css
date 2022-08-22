@@ -1,0 +1,30 @@
+.pickupline-container {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.pickupline-content{
+    background-color:rgba(238, 222, 237, 0.272);
+    padding: 2% 3%;
+    margin: 2% 0;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(48, 47, 48, 0.174);
+    /* display: inline-block; */
+    font-family: Signika Negative;
+}
+
+.pickupline-content h1{
+    color: rgb(65, 56, 110);
+    margin: 2px 0;
+    font-weight: 800;
+}
+
+.pickupline-content img{
+    width: 50%;
+    border-radius: 5px;
+}
+
+.pickupline-content p{
+    font-size: 14pt;
+}

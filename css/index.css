@@ -1,0 +1,128 @@
+html{
+    min-height: 100%;
+}
+
+body{
+    min-height: 100%;
+    background-image: linear-gradient(to bottom, #FD807D, #F86ADC, #4669F9);
+    margin: 0;
+}
+
+nav{
+    box-shadow: 0px 3px 6px #ef7270;
+    border-radius: 0 0 20px 20px;
+    /* position: relative; */
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FD807D;
+    align-items: center;
+    justify-content: right;
+    display: flex;
+}
+  
+.list {
+    width: 100%;
+    padding-right: 5%;
+}
+
+.header-container {
+    justify-content: left;
+    border-radius: 0 0 20px 20px;
+}
+
+.logo-container {
+    padding: 2% 5%;
+}
+
+#logo{
+    width: 300px;
+    justify-content: left;
+}
+
+.list a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Signika Negative;
+    font-size: 14pt;
+}
+
+.list a:hover {
+    color: #b72e2c;
+}
+
+.content{
+    padding: 1% 5%;
+    /* max-height: 100vh; */
+    /* background-color: red; */
+    display: flex;
+}
+
+.posts{
+    width: 70%;
+    min-width: 350px;
+}
+
+.post{
+    background-color:rgba(238, 222, 237, 0.272);
+    padding: 2% 3%;
+    margin: 2% 0;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(48, 47, 48, 0.174);
+    /* display: inline-block; */
+    font-family: Signika Negative;
+}
+
+.post h1{
+    color: rgb(65, 56, 110);
+    margin: 2px 0;
+    font-weight: 800;
+}
+
+.author p{
+    margin: 2px 0;
+}
+
+.post iframe{
+    border-radius: 4px;
+    margin: 10px 0;
+    /* width: 50%; */
+    /* height: 158px; */
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.266);
+}
+
+.faro{
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    width: 350px;
+}
+
+.ads{
+    width: 30%;
+}
+
+.footer{
+    justify-content: center;
+    display: flex;
+    background-color: #8aa2ff;
+    /* padding: 0.5%; */
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 4px rgba(72, 78, 140, 0.417);
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p{
+    color: rgb(4, 9, 93);
+    font-weight: bold;
+    font-family: Signika Negative;
+}

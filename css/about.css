@@ -1,0 +1,31 @@
+#content{
+    justify-content: right;
+}
+
+.about-container{
+    width: 50%;
+    min-width: 350px;
+}
+
+.about-content{
+    background-color:rgba(238, 222, 237, 0.272);
+    padding: 2% 3%;
+    margin: 26% 0 24% 0;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(48, 47, 48, 0.174);
+    /* display: inline-block; */
+    font-family: Signika Negative;
+}
+
+.about-content h1{
+    color: rgb(65, 56, 110);
+    margin: 2px 0;
+    font-weight: 800;
+}
+
+.author_luis{
+    position: fixed;
+    left: 4%;
+    bottom: 0;
+    width: 500px;
+}
