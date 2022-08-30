@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <script src="resources/calc.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="header">
+        <img id="pear" src="img/pear_logo.png" alt="">
+        <h1 class="title">pearCalculator</h1>
+    </div>
+    <div id="calculator">
+        <input id="visor" type="text" size="9" value="0" readonly>
+        <div id="buttons">
+            <button class="clear" value="CE" onclick="clearOperation(value)">CE</button>
+            <button class="delete" value="DEL" onclick="clearOperation(value)">DEL</button>
+            <button class="operators" value="/" onclick="validateOperation(value)">&divide;</button>
+            <button class="numbers" value="7" onclick="onNumberClick(value)">7</button>
+            <button class="numbers" value="8" onclick="onNumberClick(value)">8</button>
+            <button class="numbers" value="9" onclick="onNumberClick(value)">9</button>
+            <button class="operators" value="*" onclick="validateOperation(value)">&times;</button>
+            <button class="numbers" value="4" onclick="onNumberClick(value)">4</button>
+            <button class="numbers" value="5" onclick="onNumberClick(value)">5</button>
+            <button class="numbers" value="6" onclick="onNumberClick(value)">6</button>
+            <button class="operators" value="-" onclick="validateOperation(value)">-</button>
+            <button class="numbers" value="1" onclick="onNumberClick(value)">1</button>
+            <button class="numbers" value="2" onclick="onNumberClick(value)">2</button>
+            <button class="numbers" value="3" onclick="onNumberClick(value)">3</button>
+            <button class="operators" value="+" onclick="validateOperation(value)">+</button>
+            <button class="numbers" id="zero" value="0" onclick="onNumberClick(value)">0</button>
+            <button class="numbers" value="." onclick="onNumberClick(value)">,</button>
+            <button class="operators" value="=" onclick="computeOperation()">=</button>
+        </div>
+    </div>
+</body>
+</html>
