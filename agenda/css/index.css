@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Rockford Sans Bold;
+    src: url("../fonts/RockfordSans-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: Rockford Sans Light;
+    src: url("../fonts/RockfordSans-Light.ttf");
+  }
+
+body{
+    /* margin: 0; */
+    background-color: #efda3f;
+}
+
+.header{
+    padding: 10px 3%;
+    font-family: Rockford Sans Bold;
+    display: flex;
+    background-color: #f0f05f;
+    border-radius: 12px;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;      
+    letter-spacing: -1px;
+}
+
+h1{
+    margin: 5px 0 8px 0;
+}
+
+.first{
+    color: #de1e61;
+}
+
+.settings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings button{
+    margin-left: 8px;
+    font-family: Rockford Sans Light;
+    letter-spacing: -0.5px;
+    font-size: 12pt;
+    border-radius: 6px;
+    background-color: white;
+    border: 1px solid;
+    color: black;
+    min-height: 30px;
+}
+
+.settings button:hover{
+    color: white;
+    background-color: black;
+    transition: all 0.2s ease;
+}
+
+.search-box{
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 2px 2px rgb(0, 0, 0);
+    outline: none;
+    padding: 3px;
+    font-family: Rockford Sans Light;
+    font-size: 12pt;
+    letter-spacing: -0.5px;
+    
+}
+
+.table-container{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 4px 4px rgb(0, 0, 0);
+    margin: 20px auto;
+    width: 60%;
+    min-height: calc(100vh - 23vh);
+}
+
+table{
+    width: 100%;
+    margin: 15px auto;
+}
+
+th{
+    font-family: Rockford Sans Bold;
+    border: 1px dashed black;
+}
+
+tr{
+    font-family: Rockford Sans Light;
+}
+
+td{
+    border: 1px dashed black;
+}
+
+.adenia{
+    width: 18%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.sticker{
+    width: 18%;
+    position: fixed;
+    top: 0;
+    left: 1%;
+    padding-top: 250px;
+    fill: #f0f05f;
+    /* background-color: black; */
+    border-radius: 20px;
+}
+
+.catch-frase {
+    width: 9%;
+    position: fixed;
+    top: 0;
+    left: 11%;
+    padding-top: 360px;
+    transform: rotate(25deg);
+    color: #DE1E61;
+    text-shadow: 1px 1px rgb(0, 0, 0);    
+}
