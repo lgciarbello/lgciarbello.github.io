@@ -41,8 +41,7 @@ h1{
     justify-content: center;
 }
 
-.settings button{
-    margin-left: 8px;
+button{
     font-family: Rockford Sans Light;
     letter-spacing: -0.5px;
     font-size: 12pt;
@@ -50,16 +49,17 @@ h1{
     background-color: white;
     border: 1px solid;
     color: black;
-    min-height: 30px;
+    min-height: 33px;
 }
 
-.settings button:hover{
+button:hover{
     color: white;
     background-color: black;
     transition: all 0.2s ease;
 }
 
-.search-box{
+.text-field{
+    margin-right: 8px;
     border-radius: 5px;
     border: 1px solid black;
     box-shadow: 2px 2px rgb(0, 0, 0);
@@ -68,7 +68,22 @@ h1{
     font-family: Rockford Sans Light;
     font-size: 12pt;
     letter-spacing: -0.5px;
-    
+}
+
+.add-contact{
+    display: flex;
+    align-items: left;
+    flex-direction: column;  
+}
+
+.add-contact p{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.contact-inputs{
+    display: flex;
+    align-items: center;
 }
 
 .table-container{
@@ -79,6 +94,7 @@ h1{
     margin: 20px auto;
     width: 60%;
     min-height: calc(100vh - 23vh);
+    border: 1px solid;
 }
 
 table{
@@ -88,7 +104,16 @@ table{
 
 th{
     font-family: Rockford Sans Bold;
-    border: 1px dashed black;
+    font-size: 13pt;
+    border-bottom: 1px solid black;
+}
+
+.name{
+    width: 40%;
+}
+
+.options{
+    width: 20%;
 }
 
 tr{
@@ -96,7 +121,10 @@ tr{
 }
 
 td{
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
+    border-bottom: 1px dashed black;
+    text-align: center;
+    height: 30px;
 }
 
 .adenia{

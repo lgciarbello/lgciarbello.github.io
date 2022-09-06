@@ -7,6 +7,7 @@
     <title>desagenda</title>
     <link rel="icon" type="image/x-icon" href="/img/desagenda_logo.png">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/contacts.js"></script>
 </head>
 <body>
     <div class="header">
@@ -14,9 +15,17 @@
             <h1 class="first">des</h1>
             <h1 class="last">agenda</h1>
         </div>
+        <div class="add-contact">
+            <p>Adicione um colega: </p>
+            <div class="contact-inputs">
+                <input id="input-name" class="text-field" type="text" placeholder="nome">
+                <input id="input-phone" class="text-field" type="text" placeholder="telefone">
+                <button onclick="addContact()">adicionar contato</button>
+            </div>
+            
+        </div>
         <div class="settings">
-            <input class="search-box" type="text" placeholder="buscar  um  fofoqueiro"></input>
-            <button>adicionar contato</button>
+            <input id="search-box" class="text-field" type="text" placeholder="buscar  um  fofoqueiro" onkeyup="searchContact()"></input>
             </div>
         </div>
         
@@ -24,12 +33,18 @@
     <div class="content">
         <div class="table-container">
             <table>
-            <tr>
-                <th>nome</th>
-                <th>telefone</th>
-                <th>opções</th>
-            </tr>
-            <tr>
+                <thead>
+                    <tr>
+                        <th class="name">nome</th>
+                        <th class="phone">telefone</th>
+                        <th class="options">opções</th>
+                    </tr>
+                </thead>
+                <tbody id="table-data">
+                    
+                </tbody>
+            </table>
+            <!-- <tr>
                 <td>joao</td>
                 <td>11973197774</td>
                 <td>remover intruso</td>
@@ -63,8 +78,7 @@
                 <td>joao</td>
                 <td>11973197774</td>
                 <td>remover intruso</td>
-            </tr>
-            
+            </tr> -->
         </table>
         </div>
 
